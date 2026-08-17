@@ -58,4 +58,12 @@ public class Main {
 
         scanner.close();
     }
+
+    static double deposit() {
+        double amount;
+
+        System.out.print("Enter the amount you want to deposit: €");
+
+        return 0.0;
+    }
 }
