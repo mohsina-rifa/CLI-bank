@@ -4,9 +4,10 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         // declare variables
-        Scanner scanner = new Scanner(System.in);
         double balance;
         boolean isRunning = true;
 
@@ -63,6 +64,7 @@ public class Main {
         double amount;
 
         System.out.print("Enter the amount you want to deposit: €");
+        amount = scanner.nextDouble();
 
         return 0.0;
     }
