@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // welcome message
-
         // declare variables
         Scanner scanner = new Scanner(System.in);
         double balance;
@@ -19,6 +17,22 @@ public class Main {
         choice-4 : exit
         */
         int choice;
+
+        // welcome message
+        System.out.println("___________________________");
+        System.out.println("    Welcome to CLI Bank    ");
+        System.out.println("___________________________");
+
+        System.out.println("What can we help you with?");
+
+        System.out.println("Enter 1 to see your balance");
+        System.out.println("Enter 2 to deposit");
+        System.out.println("Enter 3 to withdraw amount");
+        System.out.println("Enter 4 to exit");
+
+        System.out.println("___________________________");
+        System.out.print("Enter your choice(1-4): ");
+        choice = scanner.nextInt();
 
         //display menu
 
