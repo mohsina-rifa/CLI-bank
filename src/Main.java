@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // declare variables
         Scanner scanner = new Scanner(System.in);
-        double balance;
+        double balance = 0;
         boolean isRunning = true;
 
         /*
@@ -36,7 +36,7 @@ public class Main {
             choice = scanner.nextInt();
 
             switch (choice) {
-                case 1 -> System.out.println("balance placeholder");
+                case 1 -> showBalance(balance);
                 case 2 -> System.out.println("deposit placeholder");
                 case 3 -> System.out.println("withdraw placeholder");
                 case 4 -> isRunning = false;
@@ -57,5 +57,9 @@ public class Main {
         // exit message
 
         scanner.close();
+    }
+
+    static void showBalance(double balance) {
+        System.out.printf("Your current balance is : €%.2f\n",  balance);
     }
 }
