@@ -5,7 +5,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // welcome message
 
-        System.out.println("Hello World!");
+        // declare variables
+
+        //display menu
+
+        //get & process users choice
+
+        // showBalance()
+
+        // deposit()
+
+        // withdraw()
+
+        // exit message
     }
 }
