@@ -17,22 +17,21 @@ public class Main {
         choice-4 : exit
         */
         int choice;
+        // welcome message
+        System.out.println("_______________________________________");
+        System.out.println("          Welcome to CLI Bank          ");
+        System.out.println("_______________________________________");
+
+        System.out.println("What can we help you with?");
+
+        System.out.println("Enter 1 to see your balance");
+        System.out.println("Enter 2 to deposit");
+        System.out.println("Enter 3 to withdraw amount");
+        System.out.println("Enter 4 to exit");
+
+        System.out.println("_______________________________________");
 
         while (isRunning) {
-            // welcome message
-            System.out.println("_______________________________________");
-            System.out.println("          Welcome to CLI Bank          ");
-            System.out.println("_______________________________________");
-
-            System.out.println("What can we help you with?");
-
-            System.out.println("Enter 1 to see your balance");
-            System.out.println("Enter 2 to deposit");
-            System.out.println("Enter 3 to withdraw amount");
-            System.out.println("Enter 4 to exit");
-
-            System.out.println("_______________________________________");
-
             System.out.print("Enter your choice(1-4): ");
             choice = scanner.nextInt();
 
