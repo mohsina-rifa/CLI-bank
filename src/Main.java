@@ -19,9 +19,9 @@ public class Main {
         int choice;
 
         // welcome message
-        System.out.println("___________________________");
-        System.out.println("    Welcome to CLI Bank    ");
-        System.out.println("___________________________");
+        System.out.println("_______________________________________");
+        System.out.println("          Welcome to CLI Bank          ");
+        System.out.println("_______________________________________");
 
         System.out.println("What can we help you with?");
 
@@ -30,9 +30,18 @@ public class Main {
         System.out.println("Enter 3 to withdraw amount");
         System.out.println("Enter 4 to exit");
 
-        System.out.println("___________________________");
+        System.out.println("_______________________________________");
+
         System.out.print("Enter your choice(1-4): ");
         choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1 -> System.out.println("balance placeholder");
+            case 2 -> System.out.println("deposit placeholder");
+            case 3 -> System.out.println("withdraw placeholder");
+            case 4 -> isRunning = false;
+            default -> System.out.println("You're not authorized for that option");
+        }
 
         //display menu
 
