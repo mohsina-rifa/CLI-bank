@@ -23,6 +23,7 @@ public class Main {
         System.out.println("          Welcome to CLI Bank          ");
         System.out.println("_______________________________________");
 
+        //display menu
         System.out.println("What can we help you with?");
 
         System.out.println("Enter 1 to see your balance");
@@ -30,9 +31,9 @@ public class Main {
         System.out.println("Enter 3 to withdraw amount");
         System.out.println("Enter 4 to exit");
 
-        System.out.println("_______________________________________");
-
         while (isRunning) {
+            //get & process users choice
+            System.out.println("_______________________________________");
             System.out.print("Enter your choice(1-4): ");
             choice = scanner.nextInt();
 
@@ -45,25 +46,17 @@ public class Main {
             }
         }
 
-        //display menu
-
-        //get & process users choice
-
-        // showBalance()
-
-        // deposit()
-
-        // withdraw()
-
         // exit message
 
         scanner.close();
     }
-      
+
+    // showBalance()
     static void showBalance(double balance) {
         System.out.printf("Your current balance is : €%.2f\n",  balance);
     }
-  
+
+    // deposit()
     static double deposit() {
         double amount;
 
@@ -79,6 +72,7 @@ public class Main {
         return 0;
     }
 
+    // withdraw()
     static double withdraw(double balance) {
         double amount;
 
