@@ -8,6 +8,17 @@ public class Main {
         // welcome message
 
         // declare variables
+        Scanner scanner = new Scanner(System.in);
+        double balance;
+        boolean isRunning = true;
+
+        /*
+        choice-1 : show-balance
+        choice-2 : deposit
+        choice-3 : withdraw
+        choice-4 : exit
+        */
+        int choice;
 
         //display menu
 
@@ -20,5 +31,7 @@ public class Main {
         // withdraw()
 
         // exit message
+
+        scanner.close();
     }
 }
