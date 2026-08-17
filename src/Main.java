@@ -47,6 +47,8 @@ public class Main {
         }
 
         // exit message
+        System.out.println("Thank you for banking with us");
+        System.out.println("_______________________________________");
 
         scanner.close();
     }
