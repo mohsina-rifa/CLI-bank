@@ -4,6 +4,8 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         // declare variables
         Scanner scanner = new Scanner(System.in);
@@ -37,7 +39,7 @@ public class Main {
 
             switch (choice) {
                 case 1 -> showBalance(balance);
-                case 2 -> System.out.println("deposit placeholder");
+                case 2 -> balance = balance + deposit();
                 case 3 -> System.out.println("withdraw placeholder");
                 case 4 -> isRunning = false;
                 default -> System.out.println("You're not authorized for that option");
@@ -58,8 +60,23 @@ public class Main {
 
         scanner.close();
     }
-
+      
     static void showBalance(double balance) {
         System.out.printf("Your current balance is : €%.2f\n",  balance);
+    }
+
+    static double deposit() {
+        double amount;
+
+        System.out.print("Enter the amount you want to deposit: €");
+        amount = scanner.nextDouble();
+
+        if (amount <= 0) {
+            System.out.println("Invalid amount.");
+        } else {
+            return amount;
+        }
+
+        return 0;
     }
 }
