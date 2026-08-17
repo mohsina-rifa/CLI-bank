@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         // declare variables
-        double balance;
+        double balance = 0;
         boolean isRunning = true;
 
         /*
@@ -38,7 +38,7 @@ public class Main {
 
             switch (choice) {
                 case 1 -> System.out.println("balance placeholder");
-                case 2 -> System.out.println("deposit placeholder");
+                case 2 -> balance = balance + deposit();
                 case 3 -> System.out.println("withdraw placeholder");
                 case 4 -> isRunning = false;
                 default -> System.out.println("You're not authorized for that option");
@@ -66,6 +66,12 @@ public class Main {
         System.out.print("Enter the amount you want to deposit: €");
         amount = scanner.nextDouble();
 
-        return 0.0;
+        if (amount <= 0) {
+            System.out.println("Invalid amount.");
+        } else {
+            return amount;
+        }
+
+        return 0;
     }
 }
